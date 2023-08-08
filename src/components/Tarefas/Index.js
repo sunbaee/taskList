@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './Tarefas.css';
 import { FaEdit, FaWindowClose } from 'react-icons/fa';
 
-function Tarefas({ tarefas, handleDelete, handleEdit }) {
+export default function Tarefas({ tarefas, handleDelete, handleEdit }) {
     return (
       <ul className="tarefas">
         {tarefas.map((tarefa, index) => (
@@ -16,16 +16,12 @@ function Tarefas({ tarefas, handleDelete, handleEdit }) {
             </span>
           </li>
         ))}
-        ;
       </ul>
     );
 }
-
-export default Tarefas();
 
 Tarefas.propTypes = {
     tarefas: PropTypes.array.isRequired,
     handleDelete: PropTypes.func.isRequired,
     handleEdit: PropTypes.func.isRequired,
-    
 };

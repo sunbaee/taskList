@@ -28,6 +28,6 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'react/state-in-constructor': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'react/forbid-prop-types': 'off',
+    'react/forbid-prop-types': 0,
   },
 };
